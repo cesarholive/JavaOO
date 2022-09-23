@@ -5,8 +5,8 @@ public class TestaReferencias {
 		primeiraConta.saldo = 300;
 		
 		System.out.println("Saldo da primeira Conta: " + primeiraConta.saldo);
-		
-		Conta segundaConta = primeiraConta;
+		      //abaixo é uma referencia
+		Conta segundaConta  = primeiraConta;
 		
 		System.out.println("O Saldo da segunda conta é: " + segundaConta.saldo);
 	}
