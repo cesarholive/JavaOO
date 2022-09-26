@@ -3,6 +3,14 @@ public class Conta {
 	private int agencia;
 	private int numero;
 	private Cliente titular;
+	private static int total;
+	
+	public Conta(int agencia, int numero) {
+		Conta.total++;
+		System.out.println("o total de conta é: " + total);
+		this.agencia = agencia;
+		this.numero = numero;
+	}
 
 	// Vamos escrever o primeiro método. que são os metodos de fazer as coisas a
 	// ação da conta. como depositar e sacar.
@@ -37,27 +45,35 @@ public class Conta {
 	public double getSaldo() {
 		return this.saldo;
 	}
-	
+
 	public int getNumero() {
 		return this.numero;
 	}
-	
+
 	public void setNumero(int numero) {
-		this.numero = numero; //numero da direita é uma varial local pois o numero da esquerda é o this.numero
+		if (numero <=0) {
+			System.out.println("Não pode numero menor ou igual a 0.");
+		}
+		this.numero = numero; // numero da direita é uma varial local pois o numero da esquerda é o
+								// this.numero
 	}
-	
+
 	public int getAgencia() {
 		return this.agencia;
 	}
-	
+
 	public void setAgencia(int agencia) {
+		if (agencia <= 0) {
+			System.out.println("Não pode numero negativo");
+			return;
+		}
 		this.agencia = agencia;
 	}
-	
+
 	public void setTitular(Cliente titular) {
 		this.titular = titular;
 	}
-	
+
 	public Cliente getTitular() {
 		return titular;
 	}
