@@ -12,9 +12,9 @@ public class Gerente extends Funcionario{
 		}
 	}
 
-	//public double getBonificacao() { // metodo para somar 10% no salario em caso de bonificação.
-		//return this.salario;
-	//}
+	public double getBonificacao() { // metodo para somar 10% no salario em caso de bonificação.
+		return super.getBonificacao() + super.getSalario(); // super é utilizado no lugar do this pois o atributo salario é da classe mãe
+	}
 
 
 	public int getSenha() {
