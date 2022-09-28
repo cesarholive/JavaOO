@@ -6,7 +6,7 @@ public class Funcionario {
 	private double salario;
 	
 	public double getBonificacao() { //metodo para somar 10% no salario em caso de bonificação.
-		return this.salario * 0.1;
+		return this.salario * 0.05;
 	}
 	
 	public String getNome() {
