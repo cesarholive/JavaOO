@@ -1,10 +1,11 @@
+/CalculadorDeImposto.class
 /Cliente.class
 /Conta.class
 /ContaCorrente.class
 /ContaPoupanca.class
-/TesteContas.class
-/Tribuntavel.class
-/CalculadorDeImposto.class
-/Tributavel.class
 /SeguroDeVideo.class
+/TesteContas.class
 /TesteTributaveis.class
+/Tributavel.class
+/SaldoInsuficienteException.class
+/TesteSaca.class
