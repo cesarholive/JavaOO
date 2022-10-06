@@ -1,4 +1,4 @@
-
+package br.com.bytebank.banco.modelo;
 
 public abstract class Conta {
 
@@ -71,5 +71,7 @@ public abstract class Conta {
     public static int getTotal(){
         return Conta.total;
     }
+
+	
 
 }
