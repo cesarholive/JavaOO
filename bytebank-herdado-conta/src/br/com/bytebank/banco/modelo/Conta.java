@@ -86,5 +86,11 @@ public abstract class Conta {
 	public static int getTotal() {
 		return Conta.total;
 	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Numero " + this.numero + ",Agencia " + this.agencia;
+	}
 
 }
