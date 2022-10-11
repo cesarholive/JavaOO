@@ -90,7 +90,7 @@ public abstract class Conta {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Numero " + this.numero + ",Agencia " + this.agencia;
+		return "Agencia " + this.agencia + ",Numero " + this.numero;
 	}
 
 }
