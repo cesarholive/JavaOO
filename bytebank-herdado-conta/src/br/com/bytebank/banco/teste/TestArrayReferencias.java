@@ -9,7 +9,7 @@ public class TestArrayReferencias {
 	public static void main(String[] args) {
 
 		// int [] idades = new [5];
-		Object [] referencias = new Object[5];
+		Conta [] referencias = new Conta[5];
 
 		ContaCorrente cc1 = new ContaCorrente(22, 33);
 		referencias[0] = cc1;
@@ -18,7 +18,7 @@ public class TestArrayReferencias {
 		referencias[1] = cc2;
 		
 		Cliente cli = new Cliente();
-		referencias[2] = cli;
+		//referencias[2] = cli;
 		
 //		try {
 //		System.out.println(contas[2].getAgencia());
