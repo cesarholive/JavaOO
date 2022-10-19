@@ -1,5 +1,7 @@
 package br.com.bytebank.banco.teste;
 
+import java.util.ArrayList;
+
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 import br.com.bytebank.banco.modelo.GuardadorDeReferencias;
@@ -8,24 +10,24 @@ public class Teste {
 
 	public static void main(String[] args) {
 
-		GuardadorDeReferencias guardador = new GuardadorDeReferencias();
+		ArrayList<Conta> lista = new ArrayList<Conta>();
 		
 		Conta cc = new ContaCorrente(1, 22);
 		
-		guardador.adiciona(cc);
+		lista.add(cc);
 		
 		Conta cc2 = new ContaCorrente(1, 221);
 		
-		guardador.adiciona(cc2);
+		lista.add(cc2);
 		
 		Conta cc3 = new ContaCorrente(1, 221);
 		
-		guardador.adiciona(cc3);
+		lista.add(cc3);
 		
-		int tamanho = guardador.getQuantidadeDeElementos();
+		int tamanho = lista.size();
 		System.out.println(tamanho);
 		
-		Conta ref = guardador.getReferencia(1);
+		Conta ref = lista.get(0);
 		
 		System.out.println(ref.getNumero());
 		
