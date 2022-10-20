@@ -3,6 +3,7 @@ package br.com.bytebank.banco.teste;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 import br.com.bytebank.banco.modelo.Conta;
 import br.com.bytebank.banco.modelo.ContaCorrente;
@@ -12,7 +13,7 @@ public class TesteArrayList {
 
 	public static void main(String[] args) {
 
-		List<Conta> lista = new LinkedList<Conta>();
+		List<Conta> lista = new Vector<Conta>(); //thread safe
 		
 		Conta cc = new ContaCorrente(1, 22);
 		

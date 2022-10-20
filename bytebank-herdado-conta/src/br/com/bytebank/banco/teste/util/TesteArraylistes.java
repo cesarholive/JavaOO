@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import br.com.bytebank.banco.modelo.ContaCorrente;
 
 
-public class Teste {
+public class TesteArraylistes {
 
 	public static void main(String[] args) {
 
