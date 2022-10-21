@@ -11,4 +11,8 @@ public class ContaPoupanca extends Conta {
 		super.saldo += valor;	
 	}
 	
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "ContaPoupanca " + super.toString();
+	}
 }
